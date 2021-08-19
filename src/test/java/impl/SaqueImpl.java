@@ -21,8 +21,8 @@ public class SaqueImpl {
 	private String responseBody;
 
 	public static final String URL = "http://localhost:8080/conta-corrente/lancamentos/saques/";
-	public static final int NOT_FOUND = 404;
-	public static final int SUCESSO = 200;
+	public static final int CODIGO_RETORNO_NOT_FOUND = 404;
+	public static final int CODIGO_RETORNO_SUCESSO = 200;
 	public static final String CONTA_SEM_LANCAMENTOS = "60";
 	public static final String CONTA = "80";
 	public static final String CEDULAS_ESPERADAS = "[{\"cedula\":10,\"quantidade\":1},{\"cedula\":50,\"quantidade\":1}]";
@@ -52,11 +52,11 @@ public class SaqueImpl {
 	}
 
 	public void validarStatusRetornoDoServico(int codigo) {
-		System.out.println(response.getStatusLine().getStatusCode());
 		Assert.assertEquals(codigo, response.getStatusLine().getStatusCode());
 	}
 
 	public void validarCedulasParaSaque() {
+
 		Assert.assertEquals(responseBody, CEDULAS_ESPERADAS);
 	}
 	
