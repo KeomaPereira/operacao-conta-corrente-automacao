@@ -1,6 +1,7 @@
 # operacao-conta-corrente-automacao
 
-API automatizada com cenários em BDD.
+API automatizada em java com cenários em BDD.
 
-![image](https://user-images.githubusercontent.com/57073046/130005911-bdb4c88e-0bf3-4b69-8855-3e6d12bfbe42.png)
+![image](https://user-images.githubusercontent.com/57073046/130084858-803fa298-f3ab-4fce-b494-3bfedba6045b.png)
+
 
